@@ -16,15 +16,36 @@ public class App
         // System.out.println(age);
         // System.out.println(isOnline);
 
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Ievadi savu vārdu: ");
+        // String vards = scanner.nextLine();
+        // System.out.println("Sveiks " + vards + "!");
+        // System.out.println("Ievadi savu uzvārdu: ");
+        // String uzvards = scanner.nextLine();
+        // System.out.println("Ievadi savu grupu: ");
+        // String grupa = scanner.nextLine();
+        // System.out.println("Students: " + vards +" "+ uzvards +", Grupa: "+ grupa);
+
+        // Reading Different Variable Types from User
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Write text and press enter ");
+        // String text = scanner.nextLine();
+        // System.out.println("You wrote " + text);
+
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ievadi savu vārdu: ");
-        String vards = scanner.nextLine();
-        System.out.println("Sveiks " + vards + "!");
-        System.out.println("Ievadi savu uzvārdu: ");
-        String uzvards = scanner.nextLine();
-        System.out.println("Ievadi savu grupu: ");
-        String grupa = scanner.nextLine();
-        System.out.println("Students: " + vards +" "+ uzvards +", Grupa: "+ grupa);
+        
+
+    System.out.println("Ievadi pirmo skaitli:");
+    int first = Integer.valueOf(scanner.nextLine());
+    System.out.println("Ievadi otro skaitli:");
+    int second = Integer.valueOf(scanner.nextLine());
+    System.out.println(first + second);
+    System.out.println(first - second);
+    System.out.println(first * second);
+    System.out.println((double)first / second);
+        
+        // int productCount = Integer.valueOf("20");
+        // productCount = productCount + 99;
 
 
     }
