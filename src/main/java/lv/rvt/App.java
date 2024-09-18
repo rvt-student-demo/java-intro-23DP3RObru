@@ -39,10 +39,16 @@ public class App
     int first = Integer.valueOf(scanner.nextLine());
     System.out.println("Ievadi otro skaitli:");
     int second = Integer.valueOf(scanner.nextLine());
-    System.out.println(first + second);
-    System.out.println(first - second);
-    System.out.println(first * second);
-    System.out.println((double)first / second);
+    double div = ((double) second / first );
+    int sum = (first+second);
+    int minus = (first-second);
+    int reiz = (first*second);
+    double dal = ((double) first / second);
+    System.out.println(first + "+" + second +"="+ sum);
+    System.out.println(first + "-" + second +"="+ minus);
+    System.out.println(first + "x" + second +"="+ reiz);
+    System.out.println(first + "/" + second +"="+ dal);
+    System.out.println("Vidējais:"+div);
         
         // int productCount = Integer.valueOf("20");
         // productCount = productCount + 99;
