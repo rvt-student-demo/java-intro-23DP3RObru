@@ -32,27 +32,35 @@ public class App
         // String text = scanner.nextLine();
         // System.out.println("You wrote " + text);
 
-        Scanner scanner = new Scanner(System.in);
+    //     Scanner scanner = new Scanner(System.in);
         
 
-    System.out.println("Ievadi pirmo skaitli:");
-    int first = Integer.valueOf(scanner.nextLine());
-    System.out.println("Ievadi otro skaitli:");
-    int second = Integer.valueOf(scanner.nextLine());
-    double div = ((double) second / first );
-    int sum = (first+second);
-    int minus = (first-second);
-    int reiz = (first*second);
-    double dal = ((double) first / second);
-    System.out.println(first + "+" + second +"="+ sum);
-    System.out.println(first + "-" + second +"="+ minus);
-    System.out.println(first + "x" + second +"="+ reiz);
-    System.out.println(first + "/" + second +"="+ dal);
-    System.out.println("Vidējais:"+div);
+    // System.out.println("Ievadi pirmo skaitli:");
+    // int first = Integer.valueOf(scanner.nextLine());
+    // System.out.println("Ievadi otro skaitli:");
+    // int second = Integer.valueOf(scanner.nextLine());
+    // double div = ((double) second / first );
+    // int sum = (first+second);
+    // int minus = (first-second);
+    // int reiz = (first*second);
+    // double dal = ((double) first / second);
+    // System.out.println(first + "+" + second +"="+ sum);
+    // System.out.println(first + "-" + second +"="+ minus);
+    // System.out.println(first + "x" + second +"="+ reiz);
+    // System.out.println(first + "/" + second +"="+ dal);
+    // System.out.println("Vidējais:"+div);
         
         // int productCount = Integer.valueOf("20");
         // productCount = productCount + 99;
 
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ievadi ātrumu: ");
+        int number = Integer.valueOf(scanner.nextLine());
+        if (number > 120) {
+            System.out.println("Speeding ticket!");
+        }
 
     }
 
