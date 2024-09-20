@@ -55,13 +55,45 @@ public class App
 
 
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ievadi ātrumu: ");
-        int number = Integer.valueOf(scanner.nextLine());
-        if (number > 120) {
-            System.out.println("Speeding ticket!");
-        }
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Ievadi ātrumu: ");
+        // int number = Integer.valueOf(scanner.nextLine());
+        // if (number > 120) {
+        //     System.out.println("Speeding ticket!");
+        // }
 
+
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Grade (0-100): ");
+        int grade = Integer.valueOf(scanner.nextLine());
+        if (grade < 0) {
+            System.out.println("Impossible.");
+        }
+        else if (grade => 0 && grade <= 49) {
+            System.out.println("Failed.");
+
+        }
+        else if (grade => 50 && grade <= 59) {
+            System.out.println("Grade: 1");
+
+        }
+        else if (grade => 60 && grade <= 69) {
+            System.out.println("Grade: 2");
+        }
+        else if (grade => 70 && grade <= 80) {
+            System.out.println("Grade: 3");
+        }
+        else if (grade => 80 && grade <= 90) {
+            System.out.println("Grade: 4");
+        }
+        else if (grade => 90 && grade < 100) {
+            System.out.println("Grade: 5");
+        }
+        else {
+            System.out.println("Incredible!");
+        }
     }
 
 }
