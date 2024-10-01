@@ -95,33 +95,67 @@ public class App
     //         System.out.println("Incredible!");
     //     }
     // }
+    // Scanner scanner = new Scanner(System.in);
+    // System.out.println("Enter gift price: ");
+    // int gift = Integer.valueOf(scanner.nextLine());
+    // if (gift > 4999 && gift < 25000) {
+    //     int gifttax = (int) (gift + 100+ (gift-5000)*0.08);
+    //     System.out.println("The total price of the gift with tax is- " + gifttax);
+    // }
+    // else if (gift > 25000 && gift < 55001) {
+    //     int gifttax = (int) (gift + 1700+ (gift-25000)*0.1);
+    //     System.out.println("The total price of the gift with tax is- " + gifttax);
+
+    // }
+    // else if (gift > 55000 && gift < 200001) {
+    //     int gifttax = (int) (gift + 4700+ (gift-50000)*0.12);
+    //     System.out.println("The total price of the gift with tax is- " + gifttax);
+
+    // }
+    // else if (gift > 200000 && gift < 1000001) {
+    //     int gifttax = (int) (gift + 22100+ (gift-200000)*0.15);
+    //     System.out.println("The total price of the gift with tax is- " + gifttax);
+    // }
+    // else if (gift > 1000001) {
+    //     int gifttax = (int) (gift + 142100+ (gift-1000000)*0.17);
+    //     System.out.println("The total price of the gift with tax is- " + gifttax);
+    // }
+    // else if (gift < 5000) {
+    //     System.out.println("No tax!");
+    // }
+
+    // Scanner scanner = new Scanner(System.in);
+
+
+    // while (true) {
+    // System.out.println("Give a number (end with 0): ");
+    // int number = Integer.valueOf(scanner.nextLine());
+    // int numbers = numbers + 1;
+    // int numberprev = number;
+    // int sum = number + numberprev;
+
+    // if (number == 0) {
+    //     break;
+    // }
+
+    // System.out.println(numbers);
+    // }
+
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Enter gift price: ");
-    int gift = Integer.valueOf(scanner.nextLine());
-    if (gift > 4999 && gift < 25000) {
-        int gifttax = (int) (gift + 100+ (gift-5000)*0.08);
-        System.out.println("The total price of the gift with tax is- " + gifttax);
-    }
-    else if (gift > 25000 && gift < 55001) {
-        int gifttax = (int) (gift + 1700+ (gift-25000)*0.1);
-        System.out.println("The total price of the gift with tax is- " + gifttax);
+        
+    
+    System.out.print("Enter the number of integers to print: ");
+    int cik = scanner.nextInt(); 
 
-    }
-    else if (gift > 55000 && gift < 200001) {
-        int gifttax = (int) (gift + 4700+ (gift-50000)*0.12);
-        System.out.println("The total price of the gift with tax is- " + gifttax);
+    
+    int num = 0;
 
+    
+    while (num < cik) {
+        System.out.println(num);
+        num++;
     }
-    else if (gift > 200000 && gift < 1000001) {
-        int gifttax = (int) (gift + 22100+ (gift-200000)*0.15);
-        System.out.println("The total price of the gift with tax is- " + gifttax);
-    }
-    else if (gift > 1000001) {
-        int gifttax = (int) (gift + 142100+ (gift-1000000)*0.17);
-        System.out.println("The total price of the gift with tax is- " + gifttax);
-    }
-    else if (gift < 5000) {
-        System.out.println("No tax!");
-    }
+
 }
 }
+
