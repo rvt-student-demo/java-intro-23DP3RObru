@@ -141,21 +141,35 @@ public class App
     // System.out.println(numbers);
     // }
 
-    Scanner scanner = new Scanner(System.in);
+    // Scanner scanner = new Scanner(System.in);
         
     
-    System.out.print("Enter the number of integers to print: ");
-    int cik = scanner.nextInt(); 
+    // System.out.print("Enter the number of integers to print: ");
+    // int cik = scanner.nextInt(); 
 
     
-    int num = 0;
+    // int num = 0;
 
     
-    while (num < cik) {
-        System.out.println(num);
-        num++;
-    }
+    // while (num < cik) {
+    //     System.out.println(num);
+    //     num++;
+    // }
 
+    Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ievadi numuru: ");
+        int limit = scanner.nextInt();
+
+        int result = 0;
+        String izvade = "";
+
+        for (int i = 1; i <= limit; i++) {
+            result += i;
+            izvade += (i == limit) ? i : i + "+";
+        }
+
+        System.out.println(izvade + "=" + result);
 }
 }
 
