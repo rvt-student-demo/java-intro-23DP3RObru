@@ -156,20 +156,66 @@ public class App
     //     num++;
     // }
 
-    Scanner scanner = new Scanner(System.in);
+    // Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ievadi numuru: ");
-        int limit = scanner.nextInt();
+    //     System.out.print("Ievadi numuru: ");
+    //     int limit = scanner.nextInt();
 
-        int result = 0;
-        String izvade = "";
+    //     int result = 0;
+    //     String izvade = "";
 
-        for (int i = 1; i <= limit; i++) {
-            result += i;
-            izvade += (i == limit) ? i : i + "+";
-        }
+    //     for (int i = 1; i <= limit; i++) {
+    //         result += i;
+    //         izvade += (i == limit) ? i : i + "+";
+    //     }
 
-        System.out.println(izvade + "=" + result);
+    //     System.out.println(izvade + "=" + result);
+
+    // Scanner scanner = new Scanner(System.in);
+    
+    // for (int x = 10; x <100; x +=10 ) {
+    //     System.out.println(x);
+        
+    // }
+
+
+    Scanner reader = new Scanner(System.in);
+
+System.out.print("Write numbers ");
+int sum = 0;
+int numuri = 0;
+double average = 0;
+int even=0;
+int odd=0;
+
+while (true) {
+    int input = Integer.valueOf(reader.nextLine());
+
+    if (input == -1) {
+        System.out.println("Thx! Bye!");
+        break;
+        
+    }
+    if (input % 2 == 0) {
+       even++; }
+       else {
+        odd++;
+       }
+
+
+    sum += input;
+ 
+    numuri++;
+ 
+
+}
+average =(double) sum/numuri;
+System.out.println("Sum of numbers: " + sum);
+System.out.println("Cik numuri: " + numuri);
+System.out.println("Average: " + average);
+System.out.println("Even numbers: " + even);
+System.out.println("Odd numbers: " + odd);
+
 }
 }
 
