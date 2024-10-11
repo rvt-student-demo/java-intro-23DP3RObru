@@ -12,10 +12,16 @@ public class Stars{
         System.out.println("");
         
     }
-
+    public static void printSquare(int size){
+        int times1 = 0;
+        while (times1 < size){
+            printStars(size);
+            times1 += 1;
+        }
+        
+    }
     public static void main(String[] args) {
-        printStars(5);
-        printStars(3);
-        printStars(9);
+        printSquare(4);
+        
     }
 }
