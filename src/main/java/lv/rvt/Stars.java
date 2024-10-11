@@ -12,16 +12,17 @@ public class Stars{
         System.out.println("");
         
     }
-    public static void printRectangle(int width, int height){
-        int times1 = 0;
-        while (times1 < height){
-            printStars(width);
+    public static void printTriangle(int size){
+        int times1 = 1;
+        while (times1 <= size){
+            int times2 = size - (size - 1);
+            printStars(times2 * times1);
             times1 += 1;
         }
         
     }
     public static void main(String[] args) {
-        printRectangle(17, 3);
+        printTriangle(4);
         
     }
 }
