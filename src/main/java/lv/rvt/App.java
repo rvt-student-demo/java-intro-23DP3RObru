@@ -1,25 +1,21 @@
 package lv.rvt;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class App 
 {
     public static void main( String[] args )
     {
         Scanner scanner = new Scanner(System.in);
-        int beginning = Integer.valueOf(scanner.nextLine());
-        int end = Integer.valueOf(scanner.nextLine());
-        divisibleByThreeInRange(beginning, end);
+        ArrayList<String> wordList = new ArrayList<>();
+        System.out.println("Ievadi vardus: ");
+        wordList.add(scanner.nextLine());
+        wordList.add(scanner.nextLine());
+        wordList.add(scanner.nextLine());
+        wordList.add(scanner.nextLine());
+        System.out.println(wordList.get(2));
     }
 
-public static void divisibleByThreeInRange(int beginning, int end) {
-    
 
-    while (beginning <= end) {
-        if (beginning % 3 == 0) {
-            System.out.println(beginning);
-        }
-        beginning++;
-    }
-}
 
 
 
