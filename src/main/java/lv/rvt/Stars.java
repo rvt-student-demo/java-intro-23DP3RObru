@@ -9,7 +9,13 @@ public class Stars{
             times += 1;
             
         }
-        System.out.println("");
+        
+
+        private static void printSpaces(int number) {
+            for (int i =0; i<number;i++){
+                System.out.print(" ");
+            }
+        }
         
     }
     public static void christmasTree(int height) {
