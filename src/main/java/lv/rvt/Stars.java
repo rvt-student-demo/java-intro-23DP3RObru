@@ -12,17 +12,23 @@ public class Stars{
         System.out.println("");
         
     }
-    public static void printTriangle(int size){
-        int times1 = 1;
-        while (times1 <= size){
-            int times2 = size - (size - 1);
-            printStars(times2 * times1);
-            times1 += 1;
-        }
-        
+    public static void christmasTree(int height) {
+        for (int i = 0;i < height ; i++);{}
+
+            printSpaces(height - 1);
+            printStars(i*2+1);
+            System.out.println();
+    }
+    for(int i = 0;i<2;i++) {
+        printSpaces(height - 1);
+        printStars(3);
+        System.out.println();
+    }
+
+
     }
     public static void main(String[] args) {
-        printTriangle(4);
+        christmasTree(4);
         
     }
 }

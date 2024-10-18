@@ -5,19 +5,29 @@ public class App
 {
     public static void main( String[] args )
     {
+        ArrayList<Integer> numbers = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> wordList = new ArrayList<>();
-        System.out.println("Ievadi vardus: ");
-        wordList.add(scanner.nextLine());
-        wordList.add(scanner.nextLine());
-        wordList.add(scanner.nextLine());
-        wordList.add(scanner.nextLine());
-        System.out.println(wordList.get(2));
+        System.out.println("Enter three numbers separated by spaces: ");
+        while (true) {
+            String input = scanner.nextLine();
+            
+            if (input.equalsIgnoreCase("quit")) {
+                break;
+            }
+        String[] parts = input.split(" ");
+        for (String part : parts) {
+            numbers.add(Integer.parseInt(part));
+        }
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        System.out.println("The sum of the numbers is: " + sum);
     }
 
 
 
 
 
-}
+}}
 
