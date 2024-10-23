@@ -7,27 +7,24 @@ public class App
     {
         ArrayList<Integer> numbers = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter three numbers separated by spaces: ");
+        System.out.println("Enter numbers, -1 to end: ");
         while (true) {
-            String input = scanner.nextLine();
             
-            if (input.equalsIgnoreCase("quit")) {
+            String input = scanner.nextLine();
+            if (input.equalsIgnoreCase("-1")) {
                 break;
             }
-        String[] parts = input.split(" ");
-        for (String part : parts) {
-            numbers.add(Integer.parseInt(part));
+            numbers.add(Integer.parseInt(input));
+            
+
         }
-        int sum = 0;
-        for (int number : numbers) {
-            sum += number;
-        }
-        System.out.println("The sum of the numbers is: " + sum);
+        System.out.println(numbers);        }
+        
     }
     
     
 
 
 
-}}
+
 
