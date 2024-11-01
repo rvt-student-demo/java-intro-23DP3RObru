@@ -8,28 +8,34 @@ public class App
 {
     public static void main( String[] args )
     {
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
-        int[] array = new int[10];
-        for(int i=0; i<10; i++){
-            array[i] = random.nextInt(10);
-        }
-        System.out.println(Arrays.toString(array));
-        int max = array[0];
-        int min = array[0];
-        
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] > max) {
-                max = array[i];
+        Scanner reader = new Scanner(System.in);
+        int sum = 0;
+        int prev = 0;
+        String largest = ""; 
+        int count = 0;
+        double avg = 0;
+        while (true) {
+            String input = reader.nextLine();
+            int length = input.length();
+            if (length > prev){
+                prev = length;
+                largest = input;
             }
-            if (array[i] < min) {
-                min = array[i];
-            }
-        }
-        System.out.println(min);
-        System.out.println(max);
 
+            
+            if (input.equals("")) {
+                break;
+    }
+
+        String[] pieces = input.split(",");
+        sum = sum + Integer.valueOf(pieces[1]);
+        count = count + 1;
+        if (count > 0) {
+            avg = (1.0 * sum / count);
+        }
         
+}       System.out.println("Average of the ages is " + avg);
+        System.out.println("Largest name is " + largest);
     }
 
 }
