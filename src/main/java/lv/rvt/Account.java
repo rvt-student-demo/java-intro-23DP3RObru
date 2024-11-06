@@ -12,7 +12,7 @@ public class Account {
         this.balance = this.balance + amount;
     }
     public void withdraw(double amount) {
-        this.balance = this.balance + amount;
+        this.balance = this.balance - amount;
     }
     public double balance() {
         return this.balance;
@@ -21,6 +21,6 @@ public class Account {
     public String toString() {
         return this.owner + " balance: " + this.balance;
     }
-    
+
 }
 
