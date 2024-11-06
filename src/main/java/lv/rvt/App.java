@@ -8,37 +8,22 @@ public class App
 {
     public static void main( String[] args )
     {
-        Scanner reader = new Scanner(System.in);
-        int sum = 0;
-        int prev = 0;
-        String largest = ""; 
-        int count = 0;
-        double avg = 0;
-        while (true) {
-            String input = reader.nextLine();
-            int length = input.length();
-            if (length > prev){
-                prev = length;
-                largest = input;
-            }
+        Account artosAccount = new Account("Arto's account", 100.00);
+Account artosSwissAccount = new Account("Arto's account in Switzerland", 1000000.00);
 
-            
-            if (input.equals("")) {
-                break;
-    }
+System.out.println("Initial state");
+System.out.println(artosAccount);
+System.out.println(artosSwissAccount);
 
-        String[] pieces = input.split(",");
-        sum = sum + Integer.valueOf(pieces[1]);
-        count = count + 1;
-        if (count > 0) {
-            avg = (1.0 * sum / count);
-        }
-        
-}       System.out.println("Average of the ages is " + avg);
-        System.out.println("Largest name is " + largest);
-    }
+artosAccount.withdraw(20);
+System.out.println("The balance of Arto's account is now: " + artosAccount.balance());
+artosSwissAccount.deposit(200);
+System.out.println("The balance of Arto's other account is now: " + artosSwissAccount.balance());
 
-}
+System.out.println("End state");
+System.out.println(artosAccount);
+System.out.println(artosSwissAccount);
+}}
     
     
 
