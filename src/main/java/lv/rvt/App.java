@@ -7,17 +7,24 @@ import java.util.Random;
 public class App 
 {
     public static void main(String[] args) {
-        Statistics statistics = new Statistics();
-        statistics.addNumber(3);
-        statistics.addNumber(5);
-        statistics.addNumber(1);
-        statistics.addNumber(2);
-        System.out.println("Count: " + statistics.getCount());
-        System.out.println("Sum: " + statistics.sum());
-        System.out.println("Average: " + statistics.average());
-    }
+        Scanner scanner = new Scanner(System.in);
 
-}
+        
+        Statistics statistics = new Statistics();
+        while(true){
+            int input = Integer.valueOf(scanner.nextLine());
+            if(input == -1){
+                break;
+            }
+            statistics.addNumber(input);
+
+
+
+        
+        
+    }
+    System.out.println("Sum: " + statistics.sum());
+}}
     
     
 
