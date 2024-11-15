@@ -21,4 +21,7 @@ public class PaymentCard {
         }
         
     }
+    public void addMoney(double amount) {
+        this.balance = this.balance + amount;
+    }
 }
