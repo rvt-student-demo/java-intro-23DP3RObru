@@ -7,27 +7,45 @@ import java.util.Random;
 public class App 
 {
     public static void main(String[] args) {
-        PaymentCard paulsCard = new PaymentCard(20);
-        PaymentCard mattsCard = new PaymentCard(30);
+        ArrayList<Book> books = new ArrayList<>();
 
-        paulsCard.eatHeartily();
-        mattsCard.eatAffordably();
-        System.out.println("Paul: "+paulsCard);
-        System.out.println("Matt: "+mattsCard);
-        paulsCard.addMoney(20);
-        mattsCard.eatHeartily();
-        System.out.println("Paul: "+paulsCard);
-        System.out.println("Matt: "+mattsCard);
-        paulsCard.eatAffordably();
-        paulsCard.eatAffordably();
-        mattsCard.addMoney(50);
-        System.out.println("Paul: "+paulsCard);
-        System.out.println("Matt: "+mattsCard);
+        Scanner scanner = new Scanner(System.in);
+        while(true){
+            System.out.println("Title: ");
+            String title = scanner.nextLine();
+            if (title.isEmpty()){
+                System.out.print("What information will be printed? ");
+                String choice = scanner.nextLine();
+                if (choice.equalsIgnoreCase("everything")) {
+                    for (Book book : books) {
+                        System.out.println(book.returnEverything());
+                    }
+                } else if (choice.equalsIgnoreCase("name")) {
+                    for (Book book : books) {
+                        System.out.println(book.getTitle());
+                    }
+                }
+                break; // Exit the loop after handling the choice
+            }
+            System.out.print("Pages: ");
+            int pages = Integer.parseInt(scanner.nextLine());
+
+            System.out.println("Year: ");
+            int year = Integer.parseInt(scanner.nextLine());
+
+            books.add(new Book(title, pages, year));
+        
+        
+
+
+
+        }
+
 
     
     
-    }
-}
+    
+}}
     
     
 
